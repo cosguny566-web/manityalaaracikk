@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#fff7fb">
+  <title>Her Şey Senle Güzel 🤍</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <!-- ŞİFRE EKRANI -->
+  <section id="login" class="screen active">
+    <div class="login-card glass">
+      <div class="lock">🔐</div>
+      <div class="eyebrow">Sadece sana özel</div>
+      <h1>Kalbimin kapısı 🤍</h1>
+      <p>Girmek için küçük bir sır var...</p>
+      <input id="password" type="password" inputmode="numeric" maxlength="4" placeholder="Şifre" autocomplete="off">
+      <button id="enterBtn" class="main-btn">Kalbime Gir 💗</button>
+      <div id="error" class="error"></div>
+      <div class="tiny-decor">🤍 🧿 🤍 🧿 🤍</div>
+    </div>
+  </section>
+
+  <main id="site" class="hidden">
+    <!-- MÜZİK: Aynı klasöre music.mp3 koy. -->
+    <audio id="music" src="music.mp3" loop preload="auto"></audio>
+
+    <!-- ALBÜM -->
+    <section id="page1" class="page active-page">
+      <div class="top-decor">🤍 🧿 🤍 🧿 🤍 🧿 🤍</div>
+      <p class="eyebrow">Sana özel hazırladım</p>
+      <h1>Bizim Hikâyemiz 🤍</h1>
+      <p class="subtitle">Her fotoğrafta biraz sen, biraz ben, en çok da biz...</p>
+
+      <div id="album" class="album">
+        <!-- Fotoğraflar buraya eklenecek: photo1.jpg, photo2.jpg ... -->
+        <div class="photo-card placeholder"><span>📸</span><p>Fotoğraflarını gönderince burası dolacak 🤍</p></div>
+      </div>
+
+      <button class="next-btn" data-next="page2">Sonraki →</button>
+    </section>
+
+    <!-- İLTİFATLAR -->
+    <section id="page2" class="page">
+      <div class="top-decor">🧿 🤍 🧿 🤍 🧿</div>
+      <p class="eyebrow">Bir başlık bulamadım...</p>
+      <h1>Sen Benim İçin Yazacak 🤍</h1>
+      <div class="love-list">
+        Aşkım<br>Birtanem<br>Canım<br>Değerlim<br>Hayatım<br>Sevgilim<br>Yarim<br>Sevdiğim<br>Sevdiceğim<br>Yol arkadaşım<br>Prensesim<br>Meleğim<br>Gözbebeğim<br>Sevgilim<br>Ruh eşim<br>Güzeller güzeli<br>Kalbimin kraliçesi<br>Hayatımın kadını<br>Biricik kadınım<br>Güzel gözlüm<br>Kiraz dudaklım<br>Nur yüzlüm<br>Bal yanaklım<br>Okyanusum<br>Yawrummm<br>Ömrümmmmm<br>Tutkummm<br>Gülüşüm<br>Kıvılcımım<br>Merakım<br>Rüzgarım<br>Macera ortağım<br>Kalp atışımm<br>Hayat ortağım<br>Evim<br>Hanem<br>Baş tacım<br>Kalbimin sahibi<br>Destekçim<br>Evrenim<br>Yörüngem<br>Kutup Yıldızım<br>Paralelim<br>Kaos ortağım<br>Ruh frekansım<br>Ruh yankım<br>Denge noktam<br>Kalp haritam<br>İç sesim
+      </div>
+      <button class="next-btn" data-next="page3">Sonraki →</button>
+    </section>
+
+    <!-- SAYAÇ -->
+    <section id="page3" class="page">
+      <div class="top-decor">🤍 🧿 🤍 🧿 🤍</div>
+      <p class="eyebrow">Birlikte geçen zamanın her saniyesi...</p>
+      <h1>Sana sadık kaldığımdan beri 🤍</h1>
+      <p class="date-note">9 Ağustos 2026 · 10:30'dan beri</p>
+      <div id="counter" class="counter glass">
+        <div><strong id="days">0</strong><span>Gün</span></div>
+        <div><strong id="hours">0</strong><span>Saat</span></div>
+        <div><strong id="minutes">0</strong><span>Dakika</span></div>
+        <div><strong id="seconds">0</strong><span>Saniye</span></div>
+      </div>
+
+      <div class="repeat-block">
+        <h2>100 kere söyleyebilirim... 🤍</h2>
+        <div class="repeat-grid" id="love100"></div>
+      </div>
+      <div class="repeat-block">
+        <h2>Çünkü kalbim böyle atıyor... 🤍</h2>
+        <div class="repeat-grid emojis" id="heart100"></div>
+      </div>
+      <div class="repeat-block">
+        <h2>Biraz da nazar boncuğu 🧿</h2>
+        <div class="repeat-grid emojis" id="evil100"></div>
+      </div>
+
+      <button class="next-btn" data-next="page4">Sonraki →</button>
+    </section>
+
+    <!-- SÜRPRİZ -->
+    <section id="page4" class="page">
+      <div class="top-decor">🤍 🧿 🤍 🧿 🤍</div>
+      <p class="eyebrow">Son bir şey kaldı...</p>
+      <h1>Sana küçük bir sürprizim var 🎁</h1>
+      <p class="subtitle">Kutunun üstüne <b>iki kere</b> dokun. 🤍</p>
+
+      <div id="gift" class="gift" tabindex="0" role="button" aria-label="Sürpriz kutusunu aç">
+        <div class="lid"></div><div class="box"></div><div class="ribbon-v"></div><div class="ribbon-h"></div>
+      </div>
+
+      <div id="letter" class="letter hidden">
+        <div class="letter-paper">
+          <div class="letter-flower">🤍 🧿 🤍</div>
+          <p>Sadece içimden geldi...</p>
+          <p>Her şey için teşekkürler.</p>
+          <p>Seni mutlu edebildiysem ne mutlu bana. 🤍</p>
+          <p>Yarın görüşmek üzere "len bize biseyler hazırla" hadi uyu iyi gecelerrr 🥹🤍</p>
+          <div class="signature">Seni çok seven biri... 🤍</div>
+        </div>
+      </div>
+
+      <button class="next-btn" id="finishBtn">Son →</button>
+    </section>
+
+    <!-- SON -->
+    <section id="page5" class="page final-page">
+      <div class="final-hearts">🤍 🤍 🤍</div>
+      <h1>Teşekkür ederim. 🤍</h1>
+      <p>İyi ki varsın.<br>İyi ki biz olduk.<br>Ve iyi ki kalbimde sana ait kocaman bir yer var.</p>
+      <div class="final-sign">Her şey senle güzel. 🧿🤍</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
